@@ -6,6 +6,10 @@ pygame.display.set_caption("Super TIC-TAC-TOE")
 WHITE = (255,255,255)
 BEIGE = (245,245,220)
 
+def draw_window():
+    WIN.fill(BEIGE)
+    pygame.display.update()
+
 def main():
 
     run = True
@@ -14,8 +18,7 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
 
-        WIN.fill(BEIGE)
-        pygame.display.update()
+        draw_window()
 
     pygame.quit()
 
